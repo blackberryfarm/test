@@ -2,7 +2,8 @@ version: 2
 jobs:
   build:
     docker:
-      - circleci/openjdk:10-jdk-browsers
+       - image: circleci/openjdk:10-jdk-browsers
+
     steps:
       - checkout
       - run: echo "A first hello"
